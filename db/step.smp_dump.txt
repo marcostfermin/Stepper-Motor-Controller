@@ -1,0 +1,8 @@
+
+State Machine - |Block1|Verilog2:inst1|present_state
+Name present_state.sig3 present_state.sig2 present_state.sig4 present_state.sig0 present_state.sig1 
+present_state.sig0 0 0 0 0 0 
+present_state.sig4 0 0 1 1 0 
+present_state.sig2 0 1 0 1 0 
+present_state.sig3 1 0 0 1 0 
+present_state.sig1 0 0 0 1 1 
