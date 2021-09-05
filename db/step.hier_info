@@ -1,0 +1,89 @@
+|Block1
+signal[0] <= Verilog2:inst1.signal[0]
+signal[1] <= Verilog2:inst1.signal[1]
+signal[2] <= Verilog2:inst1.signal[2]
+signal[3] <= Verilog2:inst1.signal[3]
+rst => Verilog2:inst1.rst
+rst => step:inst.rst
+dir => Verilog2:inst1.dir
+clk => step:inst.clk
+en => Verilog2:inst1.en
+
+
+|Block1|Verilog2:inst1
+rst => present_state~3.DATAIN
+dir => always0.IN0
+dir => always0.IN0
+clk => signal[0]~reg0.CLK
+clk => signal[1]~reg0.CLK
+clk => signal[2]~reg0.CLK
+clk => signal[3]~reg0.CLK
+clk => present_state~1.DATAIN
+en => always0.IN1
+en => always0.IN1
+en => Selector4.IN4
+en => Selector0.IN1
+signal[0] <= signal[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+signal[1] <= signal[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+signal[2] <= signal[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+signal[3] <= signal[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block1|step:inst
+clk => new_clk~reg0.CLK
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+clk => count[8].CLK
+clk => count[9].CLK
+clk => count[10].CLK
+clk => count[11].CLK
+clk => count[12].CLK
+clk => count[13].CLK
+clk => count[14].CLK
+clk => count[15].CLK
+clk => count[16].CLK
+clk => count[17].CLK
+clk => count[18].CLK
+clk => count[19].CLK
+clk => count[20].CLK
+clk => count[21].CLK
+clk => count[22].CLK
+clk => count[23].CLK
+clk => count[24].CLK
+clk => count[25].CLK
+rst => new_clk~reg0.ACLR
+rst => count[0].ACLR
+rst => count[1].ACLR
+rst => count[2].ACLR
+rst => count[3].ACLR
+rst => count[4].ACLR
+rst => count[5].ACLR
+rst => count[6].ACLR
+rst => count[7].ACLR
+rst => count[8].ACLR
+rst => count[9].ACLR
+rst => count[10].ACLR
+rst => count[11].ACLR
+rst => count[12].ACLR
+rst => count[13].ACLR
+rst => count[14].ACLR
+rst => count[15].ACLR
+rst => count[16].ACLR
+rst => count[17].ACLR
+rst => count[18].ACLR
+rst => count[19].ACLR
+rst => count[20].ACLR
+rst => count[21].ACLR
+rst => count[22].ACLR
+rst => count[23].ACLR
+rst => count[24].ACLR
+rst => count[25].ACLR
+new_clk <= new_clk~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
