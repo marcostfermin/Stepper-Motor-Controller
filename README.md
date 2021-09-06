@@ -93,12 +93,19 @@ After connecting the blocks, I assigned the pins for the FPGA to inputs and outp
 Where:
 
 1-PIN_P11 corresponds to the 50MHz internal clock of the FPGA.
+
 2-PIN_C11 corresponds to Switch 1 of the FPGA and controls the direction of rotation forthe motor.
+
 3-PIN_C10 corresponds to Switch 0 of the FPGA and turns the circuit on or off (Enable).
+
 4-PIN_D12 corresponds to Switch 2 of the FPGA and resets the entire circuit.
+
 5-PIN_AB8 corresponds to Digital Pin 3 of the Arduino connector of the FPGA.
+
 6-PIN_AB7 corresponds to Digital Pin 2 of the Arduino connector of the FPGA.
+
 7-PIN_AB6 corresponds to Digital Pin 1 of the Arduino connector of the FPGA.
+
 8-PIN_AB5 corresponds to Digital Pin 0 of the Arduino connector of the FPGA.
 
 # Final Product:
